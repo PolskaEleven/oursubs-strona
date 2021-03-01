@@ -1,0 +1,201 @@
+html,body
+{
+    background-color: #252525;
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;3
+}
+
+
+nav
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 5vh;
+    position: sticky;
+    top: 0;
+    z-index: 99999;
+    background-color: rgba(46, 46, 46);
+    border-bottom: solid 1px white;
+
+}
+
+.nav-l
+{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    
+}
+
+.nav-l li
+{
+    list-style: none;
+    display: block;
+    
+}
+
+.nav-l a
+{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-l a:hover
+{
+    color: rgb(175, 175, 175);
+}
+
+
+#all
+{
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    
+}
+
+
+#new img
+{
+    width: 100%;
+    height: 100%; 
+    position: relative; 
+    filter: brightness(60%);
+    
+}
+#new
+{
+    height: 100vh;
+    position: relative;
+    text-align: center;
+    color: white;
+    opacity: 1;
+    
+    
+}
+
+#new-nap
+{
+    font-weight: 900;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    text-shadow: 0px 2px 10px black;
+    
+}
+
+.new-pod
+{
+    font-weight: 400;
+    font-size: 30px;
+}
+
+#ogl
+{
+    margin-top: 50px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 50px;
+    height: 10vh;
+}
+
+#serie
+{
+   height: 50vh;
+}
+
+.seria
+{
+    height: 40vh;
+    width: 14%;
+    float: left;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.seria img
+{
+    height: 100%;
+    width: 100%;
+    position: relative; 
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.seria-nap
+{
+    background: rgba(0,0,0,.5);
+    padding: 10px;
+    text-align: center;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    
+}
+
+#stopa
+{
+    height: 6vh;
+    clear: both;
+}
+
+#media
+{
+    font-weight: lighter;
+    width: 80%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#media img
+{
+    height: 100%;
+}
+
+
+.btn {
+  width: 180px;
+  height: 60px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid white;
+  outline: none;
+  transition: 1s ease-in-out;
+}
+
+svg {
+  position: absolute;
+  left: 23.7vh;
+  top: 17.6vh;
+  fill: none;
+  stroke: #2a2a2a;
+  stroke-dasharray: 150 480;
+  stroke-dashoffset: 150;
+  transition: 1s ease-in-out;
+}
+
+.btn:hover {
+  transition: 1s ease-in-out;
+  background: #2a2a2a;
+}
+
+.btn:hover svg {
+  stroke-dashoffset: -480;
+}
+
+.btn span {
+  color: white;
+  font-size: 18px;
+  font-weight: 100;
+}

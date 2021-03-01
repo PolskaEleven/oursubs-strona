@@ -1,0 +1,168 @@
+html,body
+{
+    background: #252525;
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;3
+}
+
+
+nav
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 5vh;
+    position: sticky;
+    top: 0;
+    z-index: 99999;
+    background-color: rgba(46, 46, 46);
+    border-bottom: solid 1px white;
+
+}
+
+.nav-l
+{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+
+.nav-l li
+{
+    list-style: none;
+    display: block;
+}
+
+.nav-l a
+{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-l a:hover
+{
+    color: rgb(175, 175, 175);
+}
+
+#all
+{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 100px;
+    position: relative;
+}
+
+#all p
+{
+    font-size: 30px;
+    font-weight: 900;
+    border-bottom: solid 2px white;
+}
+
+.sortowanie
+{
+    font-weight: 900;
+    font-size: 40px;
+    margin-bottom: 3%;
+    clear: both;
+    height: 30vh;
+    
+}
+
+.seria
+{
+    font-weight: 900;
+    font-size: 30px;
+    margin-bottom: 3%;
+    height: 30vh;
+    width: 21vh;
+    float: left;
+    margin-right: 1%;
+    position: relative;
+
+}
+
+.seria img:hover
+{
+    transform: scale(1.5);
+    box-shadow: 0px 0px 10px 1px #313131;
+    filter: brightness(60%);
+}
+
+.ser-nap
+{
+    position: absolute;
+    max-width: 80%;
+    font-size: 50%;
+    bottom: 10%;
+    padding: 5%;
+    background-color: rgb(49, 49, 49, 0.7);  
+    -webkit-transition: opacity 600ms, visibility 600ms;
+    transition: opacity 600ms, visibility 600ms;
+    visibility: visible;
+    opacity: 1;
+    
+}
+
+.seria img
+{
+    border-radius: 5px;
+    height: 100%;
+    margin-right: 10px;
+    transition: all .1s ease-in-out;
+    float: left;
+}
+
+.seria img:hover ~ .ser-nap
+{
+    visibility: hidden;
+    opacity: 0;
+}
+
+.ogl 
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 700;
+  text-shadow: 0px 0px 10px black;
+  visibility: hidden;
+}
+
+.seria img:hover ~.ogl
+{
+    visibility: visible;
+}
+
+.sortowanie a
+{
+    text-decoration: none;
+    color: white;
+}
+
+
+#stopa
+{
+    height: 6vh;
+    clear: both;
+}
+
+#media
+{
+    font-weight: lighter;
+    width: 80%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#media img
+{
+    height: 100%;
+}
+
