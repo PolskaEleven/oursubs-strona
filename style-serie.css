@@ -1,10 +1,11 @@
 html,body
 {
-    background: #252525;
+    background-color: #141414;
     color: white;
     margin: 0;
     padding: 0;
-    font-family: 'Lato', sans-serif;3
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
 }
 
 
@@ -14,11 +15,13 @@ nav
     justify-content: space-around;
     align-items: center;
     min-height: 5vh;
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
     z-index: 99999;
-    background-color: rgba(46, 46, 46);
+    background-color: #141414;
     border-bottom: solid 1px white;
+    width: 100%; 
 
 }
 
@@ -32,7 +35,7 @@ nav
 .nav-l li
 {
     list-style: none;
-    display: block;
+    
 }
 
 .nav-l a
@@ -47,122 +50,145 @@ nav
     color: rgb(175, 175, 175);
 }
 
-#all
+#back
 {
-    margin-left: auto;
-    margin-right: auto;
-    padding: 100px;
     position: relative;
+    width: 100%;
+    min-width: 100vh;
+    justify-content: center;
+    align-items: center;
 }
 
-#all p
-{
-    font-size: 30px;
-    font-weight: 900;
-    border-bottom: solid 2px white;
+#back video
+{ 
+    width: 100%;
+    min-width: 100%;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    opacity: 1;
 }
 
-.sortowanie
+
+#podpis
 {
+    position: absolute;
+    top: 50%;
+    padding-left: 2%;
+    font-size: 10vh;
+    font-weight: 700;
+    text-shadow: 2px 2px 21px#141414;
+}
+
+#przycisk 
+{
+    width: 17vh;
+    height: 5vh;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid white;
+    transition: 0.5s ease-in-out;
+    color: white;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#przycisk:hover
+{
+    transition: 0.5s ease-in-out;
+    background: #fff;
+    color: #000; 
+}
+
+.shadow
+{
+    position: absolute;
+    height: 300px;
+    width: 100%;
+    z-index: 20;
+    background: linear-gradient(to top, #141414, transparent);
+    bottom: .5px;
+}
+
+#tlumaczenia
+{
+    height: 100vh;
+}
+
+.alfabet
+{
+    
+    font-size: 3vh;
+    padding-left: 5vh;
+    padding-top: 5%;
     font-weight: 900;
-    font-size: 40px;
-    margin-bottom: 3%;
     clear: both;
-    height: 30vh;
+}
+
+#lista
+{
+    
+    padding-left: 10vh;
+    font-size: 4vh;
+    font-weight: 700;
+}
+
+.serie
+{
+    width: 100%;
+    height: 40vh;
     
 }
 
 .seria
 {
-    font-weight: 900;
-    font-size: 30px;
-    margin-bottom: 3%;
-    height: 30vh;
-    width: 21vh;
+    height: 100%;
+    padding-left: 2%;
+    padding-top: 0.5%;
     float: left;
-    margin-right: 1%;
-    position: relative;
-
-}
-
-.seria img:hover
-{
-    transform: scale(1.5);
-    box-shadow: 0px 0px 10px 1px #313131;
-    filter: brightness(60%);
-}
-
-.ser-nap
-{
-    position: absolute;
-    max-width: 80%;
-    font-size: 50%;
-    bottom: 10%;
-    padding: 5%;
-    background-color: rgb(49, 49, 49, 0.7);  
-    -webkit-transition: opacity 600ms, visibility 600ms;
-    transition: opacity 600ms, visibility 600ms;
-    visibility: visible;
-    opacity: 1;
-    
 }
 
 .seria img
 {
-    border-radius: 5px;
-    height: 100%;
-    margin-right: 10px;
-    transition: all .1s ease-in-out;
-    float: left;
+    min-height: 40vh;
+    max-width: 100%;
+    max-height: 100%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
 }
 
-.seria img:hover ~ .ser-nap
+.seria-nap
 {
-    visibility: hidden;
-    opacity: 0;
+    background: rgba(0,0,0,.5);
+    padding: 10px;
+    text-align: center;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px; 
 }
-
-.ogl 
-{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-weight: 700;
-  text-shadow: 0px 0px 10px black;
-  visibility: hidden;
-}
-
-.seria img:hover ~.ogl
-{
-    visibility: visible;
-}
-
-.sortowanie a
-{
-    text-decoration: none;
-    color: white;
-}
-
 
 #stopa
 {
+    margin-top: 100%;
     height: 6vh;
     clear: both;
+    min-height: 6vh;
 }
 
 #media
 {
     font-weight: lighter;
     width: 80%;
-    height: 100%;
+    min-height: 6vh;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    font-size: 20px;
 }
 
 #media img
 {
-    height: 100%;
+    height: 6vh;
+    min-height: 6vh;
 }
-
