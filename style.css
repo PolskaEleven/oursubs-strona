@@ -1,10 +1,10 @@
 html,body
 {
-    background-color: #252525;
+    background-color: #141414;
     color: white;
     margin: 0;
     padding: 0;
-    font-family: 'Lato', sans-serif;3
+    font-family: 'Lato', sans-serif;
 }
 
 
@@ -14,12 +14,13 @@ nav
     justify-content: space-around;
     align-items: center;
     min-height: 5vh;
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
     z-index: 99999;
-    background-color: rgba(46, 46, 46);
+    background-color: rgb(46,46,46);
     border-bottom: solid 1px white;
-
+    width: 100%; 
 }
 
 .nav-l
@@ -63,9 +64,7 @@ nav
 {
     width: 100%;
     height: 100%; 
-    position: relative; 
-    filter: brightness(60%);
-    
+    filter: brightness(60%); 
 }
 #new
 {
@@ -77,15 +76,24 @@ nav
     
     
 }
+@media screen and (max-width: 1800px)
+{
+    #new
+    {
+        height: 100%;
+    }
+}
+
 
 #new-nap
 {
-    font-weight: 900;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 50px;
+    font-size: 300%;
     text-shadow: 0px 2px 10px black;
     
 }
@@ -93,38 +101,53 @@ nav
 .new-pod
 {
     font-weight: 400;
-    font-size: 30px;
+    font-size: 40%;
+}
+
+.shadow
+{
+    position: absolute;
+    height: 300px;
+    width: 100%;
+    z-index: 20;
+    background: linear-gradient(to top, #141414, transparent);
+    bottom: .5px;
 }
 
 #ogl
 {
-    margin-top: 50px;
+    margin-top: 3%;
     text-align: center;
     font-weight: 900;
-    font-size: 50px;
+    font-size: 200%;
     height: 10vh;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
 }
 
 #serie
 {
-   height: 50vh;
+   height: 100%;
+   width: 100%;
+   
 }
 
 .seria
 {
-    height: 40vh;
+    height: 100%;
     width: 14%;
     float: left;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 3%;
+    padding-right: 3%;
     padding-bottom: 100px;
     margin-left: auto;
     margin-right: auto;
-    
+
 }
 
 .seria img
 {
+    min-height: 41vh;
     height: 100%;
     width: 100%;
     position: relative; 
@@ -132,70 +155,61 @@ nav
     border-top-left-radius: 5px;
 }
 
+
 .seria-nap
 {
     background: rgba(0,0,0,.5);
     padding: 10px;
     text-align: center;
     border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    
+    border-bottom-left-radius: 5px; 
 }
+
+
+#przycisk 
+{
+    width: 17vh;
+    height: 5vh;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid white;
+    transition: 0.5s ease-in-out;
+    color: white;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#przycisk:hover
+{
+    transition: 0.5s ease-in-out;
+    background: #fff;
+    color: #000; 
+}
+
 
 #stopa
 {
     height: 6vh;
     clear: both;
+    min-height: 6vh;
 }
 
 #media
 {
     font-weight: lighter;
     width: 80%;
-    height: 100%;
+    min-height: 6vh;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    font-size: 20px;
 }
 
 #media img
 {
-    height: 100%;
+    height: 6vh;
+    min-height: 6vh;
 }
 
 
-.btn {
-  width: 180px;
-  height: 60px;
-  cursor: pointer;
-  background: transparent;
-  border: 1px solid white;
-  outline: none;
-  transition: 1s ease-in-out;
-}
 
-svg {
-  position: absolute;
-  left: 23.7vh;
-  top: 17.6vh;
-  fill: none;
-  stroke: #2a2a2a;
-  stroke-dasharray: 150 480;
-  stroke-dashoffset: 150;
-  transition: 1s ease-in-out;
-}
-
-.btn:hover {
-  transition: 1s ease-in-out;
-  background: #2a2a2a;
-}
-
-.btn:hover svg {
-  stroke-dashoffset: -480;
-}
-
-.btn span {
-  color: white;
-  font-size: 18px;
-  font-weight: 100;
-}
