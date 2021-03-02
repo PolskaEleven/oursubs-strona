@@ -3,19 +3,23 @@
 <head>
 
 	<title>OurSubs</title>
-	<link rel="stylesheet" href="style-serie.css">
-	<link rel = "icon" href ="img/gora.png" type = "image/x-icon"> 
+	<link rel="stylesheet" href="style-serie.css"> 
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">	
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;600;700;900&display=swap" rel="stylesheet">
+  <link rel = "icon" href ="img/1.png" type = "image/x-icon">
+	
 
 	
 
 </head>
 <body>
-	
+
+
 	<nav>
 		<div class="logo">
-			<a href="index.html">
+			<a href="http://oursubs.glitch.me/">
 				<img src="img/gora.png" height="40px">
 			</a>
 		</div>
@@ -32,61 +36,77 @@
 			<li>
 				<a href="#">WSPARCIE</a>
 			</li>
+			<li>
+				<a href="#">O NAS</a>
+			</li>
 		</ul>
+
 	</nav>
 
-    <div id="all">
-        <p>NASZE TŁUMACZENIA</p>
-        <div class="sortowanie">
-            B<br>
-            <div class="seria">
-                <img src="https://cdn.myanimelist.net/images/anime/1193/111970l.webp">
-                <div class="ser-nap">Boku no Hero Academia 5th Season</div>
-                <div class="ogl">oglądaj</div>
-            </div>
-            
-        </div>
-        <div class="sortowanie">
-            N<br>
-            <div class="seria">
-                <a href="index.html">
-                    <img src="https://cdn.myanimelist.net/images/anime/1011/111551l.webp">
-                    <div class="ser-nap">Nanatsu no Taizai: Fundo no Shinpan</div>
-                    <div class="ogl">oglądaj</div>
-                </a>
-            </div>
-            <div class="seria">
-                <img src="https://cdn.myanimelist.net/images/anime/1615/111323l.webp">
-                <div class="ser-nap">Nomad: Megalo Box 2</div>
-                <div class="ogl">oglądaj</div>
-            </div>
-        </div>
-        <div class="sortowanie">
-            S<br>
-            <div class="seria">
-                <img src="https://cdn.myanimelist.net/images/anime/3/65491l.webp">
-                <div class="ser-nap">Saint☆Oniisan</div>
-                <div class="ogl">oglądaj</div>
-            </div>
-        </div>
-        <div class="sortowanie">
-            T<br>
-            <div class="seria">
-                <img src="https://cdn.myanimelist.net/images/manga/1/220263.webp">
-                <div class="ser-nap">The Slime Diaries</div>
-                <div class="ogl">oglądaj</div>
-            </div>
-            <div class="seria">
-                <img src="https://cdn.myanimelist.net/images/anime/1184/110907l.webp">
-                <div class="ser-nap">Tropical-Rouge! Precure</div>
-                <div class="ogl">oglądaj</div>
-            </div>
-        </div>
+    <div id="back">
 
-
+        <video src="img/megalo.mp4" autoplay="" muted="" loop=""></video>
+        <div id="podpis">Nomad: Megalo Box 2  <br>
+            <button id="przycisk">OGLĄDAJ</button>
+            <button id="przycisk">INFORMACJE</button>
+        </div>
+        <div class="shadow"></div>
+    </div>
+    <div id="tlumaczenia">
+        <div id="lista">NASZE TŁUMACZENIA</div>
+        <div class="alfabet">B</div>
+        <div class="serie">
+            <div class="seria">
+				<img src="https://cdn.myanimelist.net/images/anime/1193/111970l.webp">
+				<div class="seria-nap">Boku no Hero Academia 5th Season</div>
+			</div>
+        </div>
+        <div class="alfabet">F</div>
+        <div class="serie">
+            <div class="seria">
+				<img src="https://cdn.myanimelist.net/images/manga/3/189781l.webp">
+				<div class="seria-nap">Fumetsu no Anata e</div>
+			</div>
+        </div>
+        <div class="alfabet">N</div>
+        <div class="serie">
+            <div class="seria">
+				<img src="https://cdn.myanimelist.net/images/anime/1011/111551l.webp">
+				<div class="seria-nap">Nanatsu no Taizai: Fundo no Shinpan</div>
+			</div>
+            <div class="seria">
+				<img src="https://cdn.myanimelist.net/images/anime/1615/111323l.webp">
+				<div class="seria-nap">Nomad: Megalo Box 2</div>
+			</div>
+        </div>
+        <div class="alfabet">S</div>
+        <div class="serie">
+            <div class="seria">
+				<img src="https://cdn.myanimelist.net/images/anime/3/65491l.webp">
+				<div class="seria-nap">Saint☆Oniisan</div>
+			</div>
+        </div>
+        <div class="alfabet">T</div>
+        <div class="serie">
+            <div class="seria">
+				<img src="https://cdn.myanimelist.net/images/manga/1/220263.webp">
+				<div class="seria-nap">The Slime Diaries</div>
+			</div>
+            <div class="seria">
+				<img src="https://cdn.myanimelist.net/images/anime/1184/110907l.webp">
+				<div class="seria-nap">Tropical-Rouge! Precure</div>
+			</div>
+        </div>
 
     </div>
-    <div id="stopa">
+	<script type="text/javascript">
+        let video = document.querySelector('video');
+        window.addEventListener('scroll', function(){
+            let value = 1 + windows.scrollY / -600;
+            video.style.opacity = value;
+        })
+    </script>
+	<div id="stopa">
 		<div id="media">
 			<div id="tekstik">Zobacz także</div>
 			<a href="https://www.facebook.com/oursubss" target="_blank">
@@ -98,7 +118,7 @@
 
 		</div>
 	</div>
-	
+
 </body>
 
 </html>
